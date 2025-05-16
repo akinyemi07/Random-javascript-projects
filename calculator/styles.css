@@ -1,0 +1,75 @@
+/******************************************************************************
+*   Name: Akinyemi sodiq Ajose - the code enigma 
+*   project: calculator
+*   Scope: Learning Html Css and Javascript 
+*   Date : May 14 2025
+*******************************************************************************/
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Layout */
+body {
+    font-family: "Tienne", serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212227;
+}
+
+/* Calculator Container */
+.container {
+    background-color: #0f1017;
+    max-width: 300px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Display Screen */
+.screen {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-align: right;
+    background-color: #1d1d27;
+    color: #eee;
+    border-radius: 8px;
+}
+
+/* Button Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* All Buttons */
+.buttons button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #272912;
+    color: #eee;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+/* Operator Buttons */
+.buttons .operator {
+    background-color: #1d2232;
+}
